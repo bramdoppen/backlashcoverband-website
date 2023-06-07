@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+  height: 120px;
+  font-size: 20px;
+  font-weight: 600;
+  position: sticky;
+  display: flex;
+  text-transform: uppercase;
+}
+
+.content {
+  margin: 0 auto;
+  width: var(--max-width);
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.navigation > ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 50px;
+}

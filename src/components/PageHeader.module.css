@@ -1,0 +1,56 @@
+.mainTitle {
+  font-size: 150px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.subTitle {
+  font-size: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: -10px;
+}
+
+.image {
+  max-width: 400px;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  z-index: 1;
+  position: relative;
+  animation: pulse 4s ease infinite alternate;
+}
+
+.absoluteContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+.tickerWrapper {
+  position: absolute;
+  width: 100%;
+}
+.tickerItem {
+  font-size: 350px;
+  font-weight: 800;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.03);
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9) rotate(3deg);
+  }
+
+  to {
+    transform: scale(1.02) rotate(3deg);
+  }
+}
