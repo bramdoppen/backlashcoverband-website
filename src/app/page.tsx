@@ -5,6 +5,7 @@ import BlockAboutUs from "@/components/BlockAboutUs";
 import BlockContact from "@/components/BlockContact";
 import { createClient, groq } from "next-sanity";
 import { cache } from "react";
+import BlockWithSongs from "@/components/BlockWithSongs";
 
 const client = createClient({
   projectId: process.env.SANITY_PROJECT_ID,
@@ -43,6 +44,7 @@ export default async function Home() {
         <PageHeader />
         <BlockAboutUs data={aboutUsData.about} />
         <BlockWithBandMembers bandMembers={bandMemberData} />
+        <BlockWithSongs songs={songData} />
         <BlockContact />
       </main>
     </>

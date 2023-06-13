@@ -1,3 +1,5 @@
+import ButtonLink from "./Button";
+import Button from "./Button";
 import MaxWidth from "./MaxWidth";
 import Image from "next/image";
 
@@ -12,20 +14,24 @@ interface Props {
 
 export default function BlockContact() {
   return (
-    <section className="my-container">
+    <section className="my-container" id="contact">
       <MaxWidth>
-        <div className="flex flex-col items-center gap-4 rounded-lg bg-zinc-800 p-20">
-          <h2 className="text-4xl font-semibold uppercase">
-            Backlash op jouw feest?
-          </h2>
-          <p>Neem contact op en informeer naar de mogelijkheden.</p>
-          <span className="flex gap-4">
-            <a className="underline" href="mailto:info@backlashcoverband.nl">
+        <div className="flex flex-col items-center gap-8 rounded-lg bg-zinc-800 p-10 md:p-20">
+          <div className="flex flex-col gap-2">
+            <h2 className="text-4xl font-semibold uppercase">
+              Backlash op jouw feest?
+            </h2>
+            <p>
+              Wij houden van herrie maken. Dat doen we ook graag op jouw feest!{" "}
+            </p>
+          </div>
+          <span className="flex flex-wrap gap-4">
+            <ButtonLink to="mailto:info@backlashcoverband.nl">
               info@backlashcoverband.nl
-            </a>
-            <a className="underline" href="https://wa.me/+31640521978">
-              of Stuur een appje
-            </a>
+            </ButtonLink>
+            <ButtonLink to="https://www.gigstarter.nl/artists/backlash-coverband">
+              Boek via Gigstarter
+            </ButtonLink>
           </span>
         </div>
       </MaxWidth>

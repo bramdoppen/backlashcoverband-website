@@ -2,13 +2,19 @@ import Image from "next/image";
 import styles from "./PageHeader.module.css";
 import headerImage from "../../public/sfeerbeelden/DSC06930.jpg";
 import MaxWidth from "./MaxWidth";
+import cx from "classnames";
 
 export default function PageHeader() {
   return (
     <header className="relative my-container mt-0 flex min-h-[70vh] flex-col items-center justify-center overflow-hidden">
       <MaxWidth>
         <div className="relative z-10 flex flex-col items-center text-white">
-          <h1 className="text-6xl font-extrabold uppercase sm:text-8xl md:text-[150px]">
+          <h1
+            className={cx(
+              "text-6xl font-extrabold uppercase sm:text-8xl md:text-[150px]",
+              styles.glitchHeading
+            )}
+          >
             Backlash
           </h1>
           <strong className=":md-m-[10px] text-4xl font-normal uppercase md:text-[50px]">

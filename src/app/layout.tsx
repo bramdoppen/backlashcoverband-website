@@ -8,7 +8,7 @@ export const metadata = {
 };
 
 const baseFont = Anybody({
-  weight: ["400", "700"],
+  weight: ["300", "400", "700", "800"],
   style: ["normal"],
   subsets: ["latin"],
   display: "swap",
