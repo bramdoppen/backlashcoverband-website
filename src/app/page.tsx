@@ -23,7 +23,7 @@ export default async function Home() {
     "imageUrl": image.asset->url
   }`);
   const songData =
-    await clientFetch(`*[ _type == 'song' && !(_id in path("drafts.**"))] {
+    await clientFetch(`*[ _type == 'song' && !(_id in path("drafts.**"))]| order(artist asc, title asc) {
       title,
       artist
     }

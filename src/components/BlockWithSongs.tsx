@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useMemo } from "react";
 import MaxWidth from "./MaxWidth";
 
 interface Song {
@@ -32,6 +32,7 @@ function arrayToChuncks(size: number, array: Array<Song>) {
 }
 
 export default function BlockWithSongs({ songs }: Properties) {
+  const totalPlayLength: number = useMemo(() => songs.length * 3.35, [songs]);
   if (!songs) return <></>;
   const chunckedSongs = arrayToChuncks(6, songs);
   return (
@@ -39,7 +40,13 @@ export default function BlockWithSongs({ songs }: Properties) {
       <MaxWidth>
         <div className="flex flex-col items-center gap-12">
           <div className="mx-auto flex max-w-2xl flex-col items-center gap-6 text-center">
-            <h2 className="text-4xl font-semibold uppercase">Repetoire</h2>
+            <div className="flex flex-col gap-1">
+              <h2 className="text-4xl font-semibold uppercase">Repertoire</h2>
+              <strong className="text-xl">
+                {songs.length} nummers, goed voor zeker{" "}
+                {Math.round(totalPlayLength)} minuten
+              </strong>
+            </div>
             <p>
               Wat wij spelen is heel wisselend, het zijn vooral nummers die wij
               zelf leuk en lekker vinden om te spelen. Sommige nummers zul je
