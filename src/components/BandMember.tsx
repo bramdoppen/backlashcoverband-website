@@ -19,7 +19,7 @@ export default function BandMember({
         <div className="relative overflow-hidden rounded-md">
           <Image
             className="h-auto w-full"
-            src={urlFor(image).width(400).height(400).url()}
+            src={urlFor(image).width(800).height(800).url()}
             width={400}
             height={400}
             alt="Bandplayer"
