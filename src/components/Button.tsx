@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Children } from "react";
 
 interface Properties {
   to: string;
@@ -14,7 +13,7 @@ export default function ButtonLink({
 }: Properties) {
   return (
     <Link
-      className="leading-1 w-full rounded-lg bg-white px-6 py-4 pb-3 text-center font-bold text-black hover:invert sm:w-auto"
+      className="leading-1 w-full flex-1 rounded-lg bg-white px-6 py-4 pb-3 text-center font-bold text-black hover:invert sm:w-auto"
       href={to}
       target={target}
     >
