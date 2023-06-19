@@ -13,9 +13,30 @@ export default function NavigationHeader() {
           </div>
           <nav className="hidden md:block">
             <ul className="flex list-none gap-[50px] p-0">
-              <li>Muziek</li>
-              <li>Over</li>
-              <li>Contact</li>
+              <li>
+                <a
+                  href="#muziek"
+                  className="relative before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-black before:opacity-0 hover:invert hover:before:opacity-100"
+                >
+                  <span className="relative">Muziek</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#over"
+                  className="relative before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-black before:opacity-0 hover:invert hover:before:opacity-100"
+                >
+                  <span className="relative">Over</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  className="relative before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-black before:opacity-0 hover:invert hover:before:opacity-100"
+                >
+                  <span className="relative">Contact</span>
+                </a>
+              </li>
             </ul>
           </nav>
           <div className="hidden md:block"></div>

@@ -1,20 +1,9 @@
 import ButtonLink from "./Button";
-import Button from "./Button";
 import MaxWidth from "./MaxWidth";
-import Image from "next/image";
-
-interface Properties {
-  title: string;
-  content: any;
-  images: any[];
-}
-interface Props {
-  data: Properties;
-}
 
 export default function BlockContact() {
   return (
-    <section className="my-container" id="contact">
+    <section className="my-container last:mb-0" id="contact">
       <MaxWidth>
         <div className="flex flex-col items-center gap-8 rounded-lg bg-zinc-800 p-10 md:p-20">
           <div className="flex flex-col gap-2">
@@ -29,8 +18,11 @@ export default function BlockContact() {
             <ButtonLink to="mailto:info@backlashcoverband.nl">
               info@backlashcoverband.nl
             </ButtonLink>
-            <ButtonLink to="https://www.gigstarter.nl/artists/backlash-coverband">
-              Boek via Gigstarter
+            <ButtonLink
+              to="https://www.gigstarter.nl/artists/backlash-coverband"
+              target="_blank"
+            >
+              Boek via Gigstarter ↗
             </ButtonLink>
           </span>
         </div>

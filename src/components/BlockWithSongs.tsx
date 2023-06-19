@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import MaxWidth from "./MaxWidth";
+import ButtonLink from "./Button";
 
 interface Song {
   _key?: string;
@@ -39,7 +40,7 @@ export default function BlockWithSongs({ songs }: Properties) {
     <section className="my-container" id="muziek">
       <MaxWidth>
         <div className="flex flex-col items-center gap-12">
-          <div className="mx-auto flex max-w-2xl flex-col items-center gap-6 text-center">
+          <div className="mx-auto flex max-w-2xl flex-col gap-6 sm:items-center sm:text-center">
             <div className="flex flex-col gap-1">
               <h2 className="text-4xl font-semibold uppercase">Repertoire</h2>
               <strong className="text-xl">
@@ -53,6 +54,14 @@ export default function BlockWithSongs({ songs }: Properties) {
               niet kennen, andere nummers kun je uit volle borst meezingen. Wij
               zorgen voor de juiste mix tussen die twee!
             </p>
+            <div className="flex flex-wrap items-center gap-x-10 gap-y-2 sm:justify-center">
+              <strong>Benieuwd geworden?</strong>
+              <span className="flex flex-1 flex-wrap gap-4 whitespace-nowrap">
+                <ButtonLink to="#contact">
+                  Neem vrijblijvend contact op
+                </ButtonLink>
+              </span>
+            </div>
           </div>
           <div className="grid w-full grid-cols-1 justify-center gap-x-8 md:grid-cols-2">
             {chunckedSongs.map((chunk: Array<Song>, idx) => (
