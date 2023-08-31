@@ -16,7 +16,7 @@ export default async function Home() {
     image
   }`);
   const songData =
-    await clientFetch(`*[ _type == 'song' && !(_id in path("drafts.**"))]| order(artist asc, title asc) {
+    await clientFetch(`*[ _type == 'song' && !archivedSong && !(_id in path("drafts.**"))]| order(artist asc, title asc) {
       title,
       artist
     }
