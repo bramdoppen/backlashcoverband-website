@@ -1,3 +1,4 @@
+import Script from "next/script";
 import ButtonLink from "./Button";
 import MaxWidth from "./MaxWidth";
 
@@ -18,12 +19,33 @@ export default function BlockContact() {
             <ButtonLink to="mailto:info@backlashcoverband.nl">
               info@backlashcoverband.nl
             </ButtonLink>
-            <ButtonLink
-              to="https://www.gigstarter.nl/artists/backlash-coverband"
-              target="_blank"
+
+            <div
+              className="gigstarter-button"
+              data-slug="backlash-coverband"
+              data-version="1"
             >
-              Boek via Gigstarter ↗
-            </ButtonLink>
+              <a
+                href="https://www.gigstarter.nl/artists/backlash-coverband"
+                target="_blank"
+              >
+                <img
+                  src="https://gigstarter.s3.amazonaws.com/boek_ons.png"
+                  alt="Boek Backlash Coverband: Rock en pop covers voor elk feest!"
+                />
+              </a>
+            </div>
+
+            <Script id="show-gigstarter-button">
+              {`(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//gigstarter.s3.amazonaws.com/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'gigstarter-sdk'));`}
+            </Script>
           </span>
         </div>
       </MaxWidth>
