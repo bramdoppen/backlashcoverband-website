@@ -3,9 +3,9 @@ import "./globals.css";
 import { Anybody } from "next/font/google";
 
 export const metadata = {
-  title: "Backlash Coverband - Rock, Pop, Alternative",
+  title: "NO CRASH Coverband - Rock, Pop, Alternative",
   description:
-    "Covers van o.a. Foo Fighters, 3 Doors Down, U2, Green Day, The Killers op jouw feestje? Dat kan!",
+    "Covers van o.a. Foo Fighters, 3 Doors Down, U2, Green Day, The Killers op jouw feestje? Informeer naar de mogelijkheden!",
 };
 
 const baseFont = Anybody({

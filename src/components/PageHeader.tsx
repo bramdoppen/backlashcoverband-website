@@ -15,7 +15,7 @@ export default function PageHeader() {
               styles.glitchHeading
             )}
           >
-            Backlash
+            NO CRASH
           </h1>
           <strong className=":md-m-[10px] text-4xl font-normal uppercase md:text-[50px]">
             Coverband
@@ -31,10 +31,10 @@ export default function PageHeader() {
         />
         <div className="absolute flex w-full">
           <span className="animate-[ticker_20s_-20s_linear_infinite] whitespace-nowrap text-[350px] font-extrabold uppercase text-white opacity-5">
-            Backlash Coverband
+            NO CRASH Coverband
           </span>
           <span className="animate-[ticker2_20s_-10s_linear_infinite] whitespace-nowrap text-[350px] font-extrabold uppercase text-white opacity-5">
-            Backlash Coverband
+            NO CRASH Coverband
           </span>
         </div>
       </div>

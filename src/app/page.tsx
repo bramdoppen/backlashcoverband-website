@@ -42,7 +42,7 @@ export default async function Home() {
         <div className="container mx-auto px-4 py-8">
           <div className="mx-auto flex h-full text-neutral-600 sm:items-center sm:justify-center">
             <ul className="flex flex-col gap-1 text-xs font-bold sm:flex-row sm:gap-8">
-              <li>Copyright Backlash Coverband, 2023</li>
+              <li>Copyright NO CRASH Coverband, 2024</li>
               <li>Fotografie door Marit Pleune en Studio Savan</li>
             </ul>
           </div>

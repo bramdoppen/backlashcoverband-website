@@ -8,7 +8,7 @@ export default function NavigationHeader() {
         <div className="mx-auto my-0 flex h-full items-center justify-center gap-[60px] md:justify-between">
           <div>
             <Link href={"/"}>
-              <span>Backlash</span>
+              <span>NO CRASH</span>
             </Link>
           </div>
           <nav className="hidden md:block">

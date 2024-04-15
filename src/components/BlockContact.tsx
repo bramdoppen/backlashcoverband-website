@@ -9,16 +9,14 @@ export default function BlockContact() {
         <div className="flex flex-col items-center gap-8 rounded-lg bg-zinc-800 p-10 md:p-20">
           <div className="flex flex-col gap-2">
             <h2 className="text-4xl font-semibold uppercase">
-              Backlash op jouw feest?
+              NO CRASH op jouw feest?
             </h2>
             <p>
               Wij houden van herrie maken. Dat doen we ook graag op jouw feest!{" "}
             </p>
           </div>
           <span className="flex flex-wrap gap-4">
-            <ButtonLink to="mailto:info@backlashcoverband.nl">
-              info@backlashcoverband.nl
-            </ButtonLink>
+            <ButtonLink to="mailto:info@nocrash.nl">info@nocrash.nl</ButtonLink>
 
             <div
               className="gigstarter-button"
@@ -31,7 +29,7 @@ export default function BlockContact() {
               >
                 <img
                   src="https://gigstarter.s3.amazonaws.com/boek_ons.png"
-                  alt="Boek Backlash Coverband: Rock en pop covers voor elk feest!"
+                  alt="Boek NO CRASH Coverband: Rock en pop covers voor elk feest!"
                 />
               </a>
             </div>
