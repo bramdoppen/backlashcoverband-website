@@ -23,11 +23,13 @@ export default function BlockAboutUs({ data }: Props) {
             </div>
             <div className="col-span-2 flex flex-col gap-6 text-left">
               <p>
-                Wij zijn een beginnende coverband uit Arnhem, we spelen vooral
-                rock covers, met een uitstapje naar pop en soms wat hardere
-                rock. Inmiddels maken we samen al 1,5 jaar muziek en hebben we
-                een leuk repertoire opgebouwd. Nu willen we ervaring op doen en
-                feestjes bouwen.
+                Wij zijn NO CRASH, een enthousiaste coverband uit regio Arnhem
+                met een passie voor rockmuziek. Ons repertoire varieert van
+                stevige rockklassiekers tot populaire popnummers, met af en toe
+                een uitstapje naar wat hardere rock. Al 3 jaar maken we samen
+                muziek en hebben we een geweldige mix van nummers opgebouwd. We
+                zijn klaar om ervaring op te doen en jouw feest onvergetelijk te
+                maken!
               </p>
               <div className="flex flex-wrap items-center gap-x-10 gap-y-2 sm:justify-center">
                 <strong>Benieuwd geworden?</strong>

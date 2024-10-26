@@ -49,10 +49,9 @@ export default function BlockWithSongs({ songs }: Properties) {
               </strong>
             </div>
             <p>
-              Wat wij spelen is heel wisselend, het zijn vooral nummers die wij
-              zelf leuk en lekker vinden om te spelen. Sommige nummers zul je
-              niet kennen, andere nummers kun je uit volle borst meezingen. Wij
-              zorgen voor de juiste mix tussen die twee!
+              Met een afwisselende set van nummers brengen we de perfecte sfeer.
+              Van meezingers tot verrassende hits – wij zorgen voor de ideale
+              balans om elk publiek in beweging te krijgen!
             </p>
             <div className="flex flex-wrap items-center gap-x-10 gap-y-2 sm:justify-center">
               <strong>Benieuwd geworden?</strong>
